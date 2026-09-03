@@ -1,0 +1,261 @@
+# ============================================================
+# HFAGM_Project
+# .gitignore
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# Python package/build files
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# ------------------------------------------------------------
+# Virtual environments
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+
+# ------------------------------------------------------------
+# Jupyter Notebook
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+
+# ------------------------------------------------------------
+# IDE / Editor files
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.project
+.pydevproject
+.settings/
+
+
+# ------------------------------------------------------------
+# Operating system files
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ------------------------------------------------------------
+# Python testing / coverage
+# ------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+
+# ------------------------------------------------------------
+# Type checking / linting
+# ------------------------------------------------------------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+
+# ------------------------------------------------------------
+# Logs and temporary files
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
+*.pid
+*.lock
+tmp/
+temp/
+
+
+# ------------------------------------------------------------
+# Environment variables / credentials
+# NEVER commit secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+config_private.*
+private_config.*
+
+
+# ------------------------------------------------------------
+# Raw clinical data
+# Do not commit patient-level/private datasets
+# ------------------------------------------------------------
+data/raw/*
+!data/raw/README.md
+!data/raw/.gitkeep
+
+
+# ------------------------------------------------------------
+# Processed patient-level data
+# ------------------------------------------------------------
+data/processed/*
+!data/processed/README.md
+!data/processed/.gitkeep
+
+
+# ------------------------------------------------------------
+# Generated train/test splits
+# ------------------------------------------------------------
+data/splits/*
+!data/splits/README.md
+!data/splits/.gitkeep
+
+
+# ------------------------------------------------------------
+# Common dataset formats
+# Ignore by default to prevent accidental data disclosure
+# ------------------------------------------------------------
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+*.joblib
+
+
+# ------------------------------------------------------------
+# Model checkpoints / serialized models
+# ------------------------------------------------------------
+models/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.sav
+
+
+# ------------------------------------------------------------
+# Generated experiment artifacts
+# ------------------------------------------------------------
+outputs/
+artifacts/
+runs/
+
+
+# ------------------------------------------------------------
+# Local experiment logs
+# ------------------------------------------------------------
+logs/
+wandb/
+mlruns/
+
+
+# ------------------------------------------------------------
+# Local configuration overrides
+# ------------------------------------------------------------
+configs/local.yaml
+configs/private.yaml
+configs/secrets.yaml
+
+
+# ------------------------------------------------------------
+# Temporary result files
+# Keep curated reproducibility results under results/
+# ------------------------------------------------------------
+results/tmp/
+results/temp/
+results/cache/
+
+
+# ------------------------------------------------------------
+# Figure working files
+# Keep final publication figures, ignore temporary exports
+# ------------------------------------------------------------
+figures/tmp/
+figures/drafts/
+*.aux
+*.synctex.gz
+
+
+# ------------------------------------------------------------
+# Office temporary files
+# ------------------------------------------------------------
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+
+# ------------------------------------------------------------
+# Archives / large temporary packages
+# ------------------------------------------------------------
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.gz
+
+
+# ------------------------------------------------------------
+# macOS / Windows metadata
+# ------------------------------------------------------------
+.AppleDouble
+.LSOverride
+Icon?
+$RECYCLE.BIN/
+
+
+# ------------------------------------------------------------
+# Local scratch directories
+# ------------------------------------------------------------
+scratch/
+workspace/
+local/
